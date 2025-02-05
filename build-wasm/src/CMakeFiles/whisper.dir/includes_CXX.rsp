@@ -1,0 +1,1 @@
+-I/home/ec2-user/nex/whisper.cpp/src/. -I/home/ec2-user/nex/whisper.cpp/src/../include -I/home/ec2-user/nex/whisper.cpp/ggml/src/../include

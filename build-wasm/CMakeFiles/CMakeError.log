@@ -1,0 +1,280 @@
+Detecting C OpenMP failed with the following output:
+Change Dir: /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c1560/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c1560.dir/build.make CMakeFiles/cmTC_c1560.dir/build
+gmake[1]: Entering directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c1560.dir/OpenMPTryFlag.c.o
+/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/emcc   -pthread -s TOTAL_STACK=5242880 -fopenmp=libomp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_c1560.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_c1560.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_c1560.dir/OpenMPTryFlag.c.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+emcc: warning: linker setting ignored during compilation: 'TOTAL_STACK' [-Wunused-command-line-argument]
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang -target wasm32-unknown-emscripten -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr --sysroot=/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -D__EMSCRIPTEN_SHARED_MEMORY__=1 -DEMSCRIPTEN -Xclang -iwithsysroot/include/fakesdl -Xclang -iwithsysroot/include/compat -pthread -fopenmp=libomp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_c1560.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_c1560.dir/OpenMPTryFlag.c.o.d -oCMakeFiles/cmTC_c1560.dir/OpenMPTryFlag.c.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang version 21.0.0git (https:/github.com/llvm/llvm-project 9534d27e3321a3b9e6e79fe6328445575bf26b7b)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin
+ (in-process)
+ "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang-21" -cc1 -triple wasm32-unknown-emscripten -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -fvisibility=hidden -debugger-tuning=gdb -fdebug-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -resource-dir /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21 -dependency-file CMakeFiles/cmTC_c1560.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_c1560.dir/OpenMPTryFlag.c.o -sys-header-deps -D __EMSCRIPTEN_SHARED_MEMORY__=1 -D EMSCRIPTEN -isysroot /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include -std=gnu11 -ferror-limit 19 -fopenmp -pthread -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fignore-exceptions -iwithsysroot/include/fakesdl -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_c1560.dir/OpenMPTryFlag.c.o -x c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang -cc1 version 21.0.0git based upon LLVM 21.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/fakesdl
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+    2 | #include <omp.h>
+      |          ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_c1560.dir/build.make:79: CMakeFiles/cmTC_c1560.dir/OpenMPTryFlag.c.o] Error 1
+gmake[1]: Leaving directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_c1560/fast] Error 2
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_56783/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_56783.dir/build.make CMakeFiles/cmTC_56783.dir/build
+gmake[1]: Entering directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_56783.dir/OpenMPTryFlag.c.o
+/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/emcc   -pthread -s TOTAL_STACK=5242880 -fopenmp=libiomp5 -v -std=gnu11 -MD -MT CMakeFiles/cmTC_56783.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_56783.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_56783.dir/OpenMPTryFlag.c.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+emcc: warning: linker setting ignored during compilation: 'TOTAL_STACK' [-Wunused-command-line-argument]
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang -target wasm32-unknown-emscripten -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr --sysroot=/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -D__EMSCRIPTEN_SHARED_MEMORY__=1 -DEMSCRIPTEN -Xclang -iwithsysroot/include/fakesdl -Xclang -iwithsysroot/include/compat -pthread -fopenmp=libiomp5 -v -std=gnu11 -MD -MT CMakeFiles/cmTC_56783.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_56783.dir/OpenMPTryFlag.c.o.d -oCMakeFiles/cmTC_56783.dir/OpenMPTryFlag.c.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang version 21.0.0git (https:/github.com/llvm/llvm-project 9534d27e3321a3b9e6e79fe6328445575bf26b7b)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin
+ (in-process)
+ "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang-21" -cc1 -triple wasm32-unknown-emscripten -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -fvisibility=hidden -debugger-tuning=gdb -fdebug-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -resource-dir /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21 -dependency-file CMakeFiles/cmTC_56783.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_56783.dir/OpenMPTryFlag.c.o -sys-header-deps -D __EMSCRIPTEN_SHARED_MEMORY__=1 -D EMSCRIPTEN -isysroot /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include -std=gnu11 -ferror-limit 19 -fopenmp -pthread -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fignore-exceptions -iwithsysroot/include/fakesdl -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_56783.dir/OpenMPTryFlag.c.o -x c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang -cc1 version 21.0.0git based upon LLVM 21.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/fakesdl
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+    2 | #include <omp.h>
+      |          ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_56783.dir/build.make:79: CMakeFiles/cmTC_56783.dir/OpenMPTryFlag.c.o] Error 1
+gmake[1]: Leaving directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_56783/fast] Error 2
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0e760/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0e760.dir/build.make CMakeFiles/cmTC_0e760.dir/build
+gmake[1]: Entering directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e760.dir/OpenMPTryFlag.c.o
+/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/emcc   -pthread -s TOTAL_STACK=5242880 -fopenmp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_0e760.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_0e760.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_0e760.dir/OpenMPTryFlag.c.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+emcc: warning: linker setting ignored during compilation: 'TOTAL_STACK' [-Wunused-command-line-argument]
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang -target wasm32-unknown-emscripten -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr --sysroot=/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -D__EMSCRIPTEN_SHARED_MEMORY__=1 -DEMSCRIPTEN -Xclang -iwithsysroot/include/fakesdl -Xclang -iwithsysroot/include/compat -pthread -fopenmp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_0e760.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_0e760.dir/OpenMPTryFlag.c.o.d -oCMakeFiles/cmTC_0e760.dir/OpenMPTryFlag.c.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang version 21.0.0git (https:/github.com/llvm/llvm-project 9534d27e3321a3b9e6e79fe6328445575bf26b7b)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin
+ (in-process)
+ "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang-21" -cc1 -triple wasm32-unknown-emscripten -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -fvisibility=hidden -debugger-tuning=gdb -fdebug-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -resource-dir /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21 -dependency-file CMakeFiles/cmTC_0e760.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_0e760.dir/OpenMPTryFlag.c.o -sys-header-deps -D __EMSCRIPTEN_SHARED_MEMORY__=1 -D EMSCRIPTEN -isysroot /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include -std=gnu11 -ferror-limit 19 -fopenmp -pthread -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fignore-exceptions -iwithsysroot/include/fakesdl -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_0e760.dir/OpenMPTryFlag.c.o -x c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang -cc1 version 21.0.0git based upon LLVM 21.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/fakesdl
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+    2 | #include <omp.h>
+      |          ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_0e760.dir/build.make:79: CMakeFiles/cmTC_0e760.dir/OpenMPTryFlag.c.o] Error 1
+gmake[1]: Leaving directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_0e760/fast] Error 2
+
+
+
+Detecting C OpenMP failed with the following output:
+Change Dir: /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_40b02/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_40b02.dir/build.make CMakeFiles/cmTC_40b02.dir/build
+gmake[1]: Entering directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_40b02.dir/OpenMPTryFlag.c.o
+/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/emcc   -pthread -s TOTAL_STACK=5242880 -Xclang -fopenmp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_40b02.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_40b02.dir/OpenMPTryFlag.c.o.d -o CMakeFiles/cmTC_40b02.dir/OpenMPTryFlag.c.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+emcc: warning: linker setting ignored during compilation: 'TOTAL_STACK' [-Wunused-command-line-argument]
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang -target wasm32-unknown-emscripten -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr --sysroot=/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -D__EMSCRIPTEN_SHARED_MEMORY__=1 -DEMSCRIPTEN -Xclang -iwithsysroot/include/fakesdl -Xclang -iwithsysroot/include/compat -pthread -Xclang -fopenmp -v -std=gnu11 -MD -MT CMakeFiles/cmTC_40b02.dir/OpenMPTryFlag.c.o -MF CMakeFiles/cmTC_40b02.dir/OpenMPTryFlag.c.o.d -oCMakeFiles/cmTC_40b02.dir/OpenMPTryFlag.c.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang version 21.0.0git (https:/github.com/llvm/llvm-project 9534d27e3321a3b9e6e79fe6328445575bf26b7b)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin
+ (in-process)
+ "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang-21" -cc1 -triple wasm32-unknown-emscripten -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.c -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -fvisibility=hidden -debugger-tuning=gdb -fdebug-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -resource-dir /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21 -dependency-file CMakeFiles/cmTC_40b02.dir/OpenMPTryFlag.c.o.d -MT CMakeFiles/cmTC_40b02.dir/OpenMPTryFlag.c.o -sys-header-deps -D __EMSCRIPTEN_SHARED_MEMORY__=1 -D EMSCRIPTEN -isysroot /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include -std=gnu11 -ferror-limit 19 -pthread -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fignore-exceptions -iwithsysroot/include/fakesdl -iwithsysroot/include/compat -fopenmp -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_40b02.dir/OpenMPTryFlag.c.o -x c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+clang -cc1 version 21.0.0git based upon LLVM 21.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/fakesdl
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.c:2:10: fatal error: 'omp.h' file not found
+    2 | #include <omp.h>
+      |          ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_40b02.dir/build.make:79: CMakeFiles/cmTC_40b02.dir/OpenMPTryFlag.c.o] Error 1
+gmake[1]: Leaving directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_40b02/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_67f34/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_67f34.dir/build.make CMakeFiles/cmTC_67f34.dir/build
+gmake[1]: Entering directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_67f34.dir/OpenMPTryFlag.cpp.o
+/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/em++   -pthread -s TOTAL_STACK=5242880 -fopenmp=libomp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_67f34.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_67f34.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_67f34.dir/OpenMPTryFlag.cpp.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+em++: warning: linker setting ignored during compilation: 'TOTAL_STACK' [-Wunused-command-line-argument]
+ "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang++" -target wasm32-unknown-emscripten -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr --sysroot=/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -D__EMSCRIPTEN_SHARED_MEMORY__=1 -DEMSCRIPTEN -Xclang -iwithsysroot/include/fakesdl -Xclang -iwithsysroot/include/compat -pthread -fopenmp=libomp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_67f34.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_67f34.dir/OpenMPTryFlag.cpp.o.d -oCMakeFiles/cmTC_67f34.dir/OpenMPTryFlag.cpp.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang version 21.0.0git (https:/github.com/llvm/llvm-project 9534d27e3321a3b9e6e79fe6328445575bf26b7b)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin
+ (in-process)
+ "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang-21" -cc1 -triple wasm32-unknown-emscripten -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -fvisibility=hidden -debugger-tuning=gdb -fdebug-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -resource-dir /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21 -dependency-file CMakeFiles/cmTC_67f34.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_67f34.dir/OpenMPTryFlag.cpp.o -sys-header-deps -D __EMSCRIPTEN_SHARED_MEMORY__=1 -D EMSCRIPTEN -isysroot /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1 -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1 -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include -std=gnu++17 -fdeprecated-macro -ferror-limit 19 -fopenmp -pthread -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fignore-exceptions -fexceptions -iwithsysroot/include/fakesdl -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_67f34.dir/OpenMPTryFlag.cpp.o -x c++ /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 21.0.0git based upon LLVM 21.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1"
+ignoring nonexistent directory "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/fakesdl
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+    2 | #include <omp.h>
+      |          ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_67f34.dir/build.make:79: CMakeFiles/cmTC_67f34.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_67f34/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bf074/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bf074.dir/build.make CMakeFiles/cmTC_bf074.dir/build
+gmake[1]: Entering directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bf074.dir/OpenMPTryFlag.cpp.o
+/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/em++   -pthread -s TOTAL_STACK=5242880 -fopenmp=libiomp5 -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_bf074.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_bf074.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_bf074.dir/OpenMPTryFlag.cpp.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+em++: warning: linker setting ignored during compilation: 'TOTAL_STACK' [-Wunused-command-line-argument]
+ "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang++" -target wasm32-unknown-emscripten -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr --sysroot=/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -D__EMSCRIPTEN_SHARED_MEMORY__=1 -DEMSCRIPTEN -Xclang -iwithsysroot/include/fakesdl -Xclang -iwithsysroot/include/compat -pthread -fopenmp=libiomp5 -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_bf074.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_bf074.dir/OpenMPTryFlag.cpp.o.d -oCMakeFiles/cmTC_bf074.dir/OpenMPTryFlag.cpp.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang version 21.0.0git (https:/github.com/llvm/llvm-project 9534d27e3321a3b9e6e79fe6328445575bf26b7b)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin
+ (in-process)
+ "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang-21" -cc1 -triple wasm32-unknown-emscripten -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -fvisibility=hidden -debugger-tuning=gdb -fdebug-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -resource-dir /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21 -dependency-file CMakeFiles/cmTC_bf074.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_bf074.dir/OpenMPTryFlag.cpp.o -sys-header-deps -D __EMSCRIPTEN_SHARED_MEMORY__=1 -D EMSCRIPTEN -isysroot /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1 -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1 -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include -std=gnu++17 -fdeprecated-macro -ferror-limit 19 -fopenmp -pthread -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fignore-exceptions -fexceptions -iwithsysroot/include/fakesdl -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_bf074.dir/OpenMPTryFlag.cpp.o -x c++ /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 21.0.0git based upon LLVM 21.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1"
+ignoring nonexistent directory "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/fakesdl
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+    2 | #include <omp.h>
+      |          ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_bf074.dir/build.make:79: CMakeFiles/cmTC_bf074.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_bf074/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1ba46/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1ba46.dir/build.make CMakeFiles/cmTC_1ba46.dir/build
+gmake[1]: Entering directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1ba46.dir/OpenMPTryFlag.cpp.o
+/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/em++   -pthread -s TOTAL_STACK=5242880 -fopenmp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_1ba46.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_1ba46.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_1ba46.dir/OpenMPTryFlag.cpp.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+em++: warning: linker setting ignored during compilation: 'TOTAL_STACK' [-Wunused-command-line-argument]
+ "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang++" -target wasm32-unknown-emscripten -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr --sysroot=/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -D__EMSCRIPTEN_SHARED_MEMORY__=1 -DEMSCRIPTEN -Xclang -iwithsysroot/include/fakesdl -Xclang -iwithsysroot/include/compat -pthread -fopenmp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_1ba46.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_1ba46.dir/OpenMPTryFlag.cpp.o.d -oCMakeFiles/cmTC_1ba46.dir/OpenMPTryFlag.cpp.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang version 21.0.0git (https:/github.com/llvm/llvm-project 9534d27e3321a3b9e6e79fe6328445575bf26b7b)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin
+ (in-process)
+ "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang-21" -cc1 -triple wasm32-unknown-emscripten -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -fvisibility=hidden -debugger-tuning=gdb -fdebug-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -resource-dir /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21 -dependency-file CMakeFiles/cmTC_1ba46.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_1ba46.dir/OpenMPTryFlag.cpp.o -sys-header-deps -D __EMSCRIPTEN_SHARED_MEMORY__=1 -D EMSCRIPTEN -isysroot /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1 -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1 -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include -std=gnu++17 -fdeprecated-macro -ferror-limit 19 -fopenmp -pthread -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fignore-exceptions -fexceptions -iwithsysroot/include/fakesdl -iwithsysroot/include/compat -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_1ba46.dir/OpenMPTryFlag.cpp.o -x c++ /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 21.0.0git based upon LLVM 21.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1"
+ignoring nonexistent directory "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/fakesdl
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+    2 | #include <omp.h>
+      |          ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_1ba46.dir/build.make:79: CMakeFiles/cmTC_1ba46.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_1ba46/fast] Error 2
+
+
+
+Detecting CXX OpenMP failed with the following output:
+Change Dir: /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_aa1f1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_aa1f1.dir/build.make CMakeFiles/cmTC_aa1f1.dir/build
+gmake[1]: Entering directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_aa1f1.dir/OpenMPTryFlag.cpp.o
+/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/em++   -pthread -s TOTAL_STACK=5242880 -Xclang -fopenmp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_aa1f1.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_aa1f1.dir/OpenMPTryFlag.cpp.o.d -o CMakeFiles/cmTC_aa1f1.dir/OpenMPTryFlag.cpp.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+em++: warning: linker setting ignored during compilation: 'TOTAL_STACK' [-Wunused-command-line-argument]
+ "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang++" -target wasm32-unknown-emscripten -fignore-exceptions -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr --sysroot=/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -D__EMSCRIPTEN_SHARED_MEMORY__=1 -DEMSCRIPTEN -Xclang -iwithsysroot/include/fakesdl -Xclang -iwithsysroot/include/compat -pthread -Xclang -fopenmp -v -std=gnu++17 -MD -MT CMakeFiles/cmTC_aa1f1.dir/OpenMPTryFlag.cpp.o -MF CMakeFiles/cmTC_aa1f1.dir/OpenMPTryFlag.cpp.o.d -oCMakeFiles/cmTC_aa1f1.dir/OpenMPTryFlag.cpp.o -c /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang version 21.0.0git (https:/github.com/llvm/llvm-project 9534d27e3321a3b9e6e79fe6328445575bf26b7b)
+Target: wasm32-unknown-emscripten
+Thread model: posix
+InstalledDir: /home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin
+ (in-process)
+ "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/bin/clang-21" -cc1 -triple wasm32-unknown-emscripten -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name OpenMPTryFlag.cpp -mrelocation-model static -mframe-pointer=none -ffp-contract=on -fno-rounding-math -mconstructor-aliases -target-feature +atomics -target-feature +bulk-memory -target-feature +mutable-globals -target-feature +sign-ext -target-cpu generic -fvisibility=hidden -debugger-tuning=gdb -fdebug-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -v -fcoverage-compilation-dir=/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp -resource-dir /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21 -dependency-file CMakeFiles/cmTC_aa1f1.dir/OpenMPTryFlag.cpp.o.d -MT CMakeFiles/cmTC_aa1f1.dir/OpenMPTryFlag.cpp.o -sys-header-deps -D __EMSCRIPTEN_SHARED_MEMORY__=1 -D EMSCRIPTEN -isysroot /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1 -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1 -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten -internal-isystem /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include -std=gnu++17 -fdeprecated-macro -ferror-limit 19 -pthread -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fignore-exceptions -fexceptions -iwithsysroot/include/fakesdl -iwithsysroot/include/compat -fopenmp -mllvm -combiner-global-alias-analysis=false -mllvm -enable-emscripten-sjlj -mllvm -disable-lsr -o CMakeFiles/cmTC_aa1f1.dir/OpenMPTryFlag.cpp.o -x c++ /home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+clang -cc1 version 21.0.0git based upon LLVM 21.0.0git default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten/c++/v1"
+ignoring nonexistent directory "/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/wasm32-emscripten"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/fakesdl
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/compat
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include/c++/v1
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/lib/clang/21/include
+ /home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/cache/sysroot/include
+End of search list.
+/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp:2:10: fatal error: 'omp.h' file not found
+    2 | #include <omp.h>
+      |          ^~~~~~~
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_aa1f1.dir/build.make:79: CMakeFiles/cmTC_aa1f1.dir/OpenMPTryFlag.cpp.o] Error 1
+gmake[1]: Leaving directory '/home/ec2-user/nex/whisper.cpp/build-wasm/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_aa1f1/fast] Error 2
+
+
+

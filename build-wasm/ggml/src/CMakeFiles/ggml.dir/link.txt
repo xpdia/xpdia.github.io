@@ -1,0 +1,2 @@
+/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/emar qc libggml.a CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o
+/home/ec2-user/nex/whisper.cpp/emsdk/upstream/emscripten/emranlib libggml.a
